@@ -56,7 +56,7 @@ void display(){
 
     for(int j=0; j<n; j++)
     {//Looping Dengan j dimulai dari 0 hingga n-1
-        cout << arr[j] << endl;// Output ke Layar
+        cout <<"Data ke-" << j+1 <<" = " << arr[j] << endl;// Output ke Layar
     }
     cout<<endl;
 }
@@ -64,5 +64,7 @@ int main (){
     input();
     InsertionSort();
     display();
+    system("Pause");
+    return 0;
 
 }
