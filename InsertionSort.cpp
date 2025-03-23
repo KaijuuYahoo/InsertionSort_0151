@@ -44,9 +44,25 @@ void InsertionSort()
         }
         arr[j+1] = temp; //Step 5
     }
-}   
+}  
+
+void display(){
+    cout << endl;// Output Baris Kosong
+    cout << "=================================" << endl;
+    cout << "Total Pass = " << n-1 << endl;//count elemen movement
+    cout << "=================================" << endl;// Output ke Layar
+    cout << "Element Array yang Telah Tersusun" << endl;// Output ke Layar
+    cout << "=================================" << endl;// Output ke Layar
+
+    for(int j=0; j<n; j++)
+    {//Looping Dengan j dimulai dari 0 hingga n-1
+        cout << arr[j] << endl;// Output ke Layar
+    }
+    cout<<endl;
+}
 int main (){
     input();
     InsertionSort();
-    
+    display();
+
 }
