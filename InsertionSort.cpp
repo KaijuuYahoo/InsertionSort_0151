@@ -48,4 +48,5 @@ void InsertionSort()
 int main (){
     input();
     InsertionSort();
+    
 }
